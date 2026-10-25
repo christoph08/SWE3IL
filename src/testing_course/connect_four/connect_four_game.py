@@ -3,14 +3,14 @@ from testing_course.connect_four.player import Player
 
 class ConnectFourGame:
     def __init__(self, player_on_turn: Player) -> None:
-        raise NotImplementedError
+        self._winner = Player.NONE
 
     def get_player_at(self, row: int, col: int) -> Player:
         raise NotImplementedError
 
     @property
     def player_on_turn(self) -> Player:
-        raise NotImplementedError
+        raise NotImplementedError    
 
     @property
     def is_game_over(self) -> bool:
@@ -18,7 +18,7 @@ class ConnectFourGame:
 
     @property
     def winner(self) -> Player:
-        raise NotImplementedError
+        return self._winner
 
     def reset(self, player_on_turn: Player) -> None:
         raise NotImplementedError

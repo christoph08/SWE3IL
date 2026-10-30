@@ -1,32 +1,9 @@
-# Testing and TDD with Python
+# Connect Four
 
-Exercises for learning unit testing and test-driven development with [pytest](https://docs.pytest.org).
+Im Rahmen dieser Aufgabe wurden die Spiellogik von Connect Four sowie die dazugehörigen automatisierten Tests implementiert.
 
-## Setup
+Die gesamte Spiellogik ist durch Tests abgedeckt. Ausgenommen davon ist lediglich die `__str__()`-Methode zur Darstellung des Spielfeldes.
 
-Install [uv](https://docs.astral.sh/uv/), then:
-
-```bash
-uv sync
-uv run pytest
-```
-
-## Layout
-
-| Exercise | Code | Tests |
-|---|---|---|
-| Exploration (pytest, mocks, fakes) | `src/testing_course/exploration/` | `tests/exploration/` |
-| Bowling kata | `src/testing_course/bowling/` | `tests/bowling/` |
-| Connect Four (TDD) | `src/testing_course/connect_four/` | `tests/connect_four/` |
-
-## Useful commands
-
-```bash
-uv run pytest tests/bowling      # one exercise
-uv run pytest -k spare           # tests matching a name
-uv run pytest --cov              # coverage
-uv run ruff check                # lint
-uv run ruff format               # format
-uv run ty check                  # type check
-uv run connect-four              # play Connect Four
-```
+## Autoren
+- Bastian Halbig
+- Christoph Eisschiel
